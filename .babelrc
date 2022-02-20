@@ -4,11 +4,11 @@
             "@babel/preset-env",
             {
                 "targets": {
+                    // compile current version of node and
+                    // allow expression such as async/await
                     "node": "current"
                 }
             }
-        ],
-        "@babel/preset-react"
-    ],
-    "plugins": ["react-hot-loader/babel"]
+        ]
+    ]
 }
