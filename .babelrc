@@ -4,8 +4,8 @@
             "@babel/preset-env",
             {
                 "targets": {
-                    // compile current version of node and
-                    // allow expression such as async/await
+                    // compile against current version of Node and
+                    // allow to use expression such as async/await in backend
                     "node": "current"
                 }
             }
