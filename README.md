@@ -54,3 +54,13 @@ To enable and handle user CRUD operations on the user database, the backend will
 - Some of these user CRUD operations will have protected access, which will require the requesting client to be authenticated, authorized, or both, as defined by the feature specifications.
 - The last two routes in the table are for authentication
 - We will use the JWT mechanism to implement these authentication features.
+
+<hr/>
+
+# Summary
+
+In this chapter, we developed a fully functioning standalone server-side application using Node, Express, and MongoDB and covered the first part of the MERN skeleton application. In the backend, we implemented a user model for storing user data, implemented with Mongoose; user API endpoints to perform CRUD operations, which were implemented with Express; and user auth for protected routes, which was implemented with JWT and express-jwt.
+
+We also set up the development flow by configuring Webpack so that it compiles ES6+ code using Babel. We also configured Nodemon so that it restarts the server when the code changes. Finally, we checked the implementation of the APIs using the Advanced Rest API Client extension app for Chrome.
+
+Now, we are ready to extend this backend application code and add the React frontend, which will complete the MERN skeleton application. We will do this in the next chapter.

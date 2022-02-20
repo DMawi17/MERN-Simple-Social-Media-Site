@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import crypto from "crypto";
 
 // specify the properties or structure of each document in a collection.
 const UserSchema = new mongoose.Schema({
