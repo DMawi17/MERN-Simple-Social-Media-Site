@@ -9,9 +9,9 @@ const config = {
     target: "node",
     output: {
         path: path.join(CURRENT_WORKING_DIR, "/dist/"),
-        filename: "server.generated.js", // run the server-side code using this.
+        filename: "server.generated.js",
         publicPath: "/dist/",
-        libraryTarget: "commonjs2", // CommonJS environment will be assumed.
+        libraryTarget: "commonjs2",
     },
     externals: [nodeExternals()],
     module: {
