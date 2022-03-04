@@ -23,6 +23,11 @@ const config = {
                 exclude: /node_modules/, // folders to exclude.
                 use: ["babel-loader"], // transpilation tool to be used.
             },
+            {
+                // bundles the static image file with the rest of the compiled JS code so that the code can access and load it.
+                test: /\.(ttf|eot|svg|gif|jpg|png)(\?[\s\S]+)?$/,
+                loader: "file-loader",
+            },
         ],
     },
     plugins: [
