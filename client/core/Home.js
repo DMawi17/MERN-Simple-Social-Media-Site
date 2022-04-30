@@ -4,7 +4,7 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
-import yactocatImg from "./../assets/images/yaktocat.png";
+import home from "./../assets/images/home.jpg";
 
 const useStyles = makeStyles((theme) => ({
     card: {
@@ -32,8 +32,8 @@ export default function Home() {
             </Typography>
             <CardMedia
                 className={classes.media}
-                image={yactocatImg}
-                title="yacto cat image"
+                image={home}
+                title="green planet image"
             />
             <CardContent>
                 <Typography variant="body2" component="p">

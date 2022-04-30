@@ -7,7 +7,8 @@ const MainRouter = () => {
         <div>
             {/* renders the first child that matches the requested route path. */}
             <Routes>
-                <Route exact path="/" component={Home} />
+                {/* <Route exact path="/" component={Home} /> */}
+                <Route path="/" exact element={<Home />} />
             </Routes>
         </div>
     );
