@@ -37,7 +37,7 @@ export default function Home() {
             />
             <CardContent>
                 <Typography variant="body2" component="p">
-                    Welcome to the MERN Skeleton home page.
+                    Welcome to the Simple Social Media home page.
                 </Typography>
             </CardContent>
         </Card>
