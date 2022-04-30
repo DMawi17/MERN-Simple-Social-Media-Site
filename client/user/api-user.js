@@ -14,3 +14,16 @@ const create = async (user) => {
         console.log(err);
     }
 };
+
+const list = async (signal) => {
+    try {
+        let response = await fetch("/api/users", {
+            method: "GET",
+            signal: signal,
+        });
+        // if it resolve successfully will give the component an array of user objects that was retrieved from the db.
+        return await response.json();
+    } catch (err) {
+        console.log(err);
+    }
+};
