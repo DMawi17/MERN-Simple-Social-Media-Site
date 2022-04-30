@@ -1,3 +1,4 @@
+// CREATING A USER:
 const create = async (user) => {
     try {
         let response = await fetch("/api/users", {
@@ -15,6 +16,7 @@ const create = async (user) => {
     }
 };
 
+// LISTING USERS:
 const list = async (signal) => {
     try {
         let response = await fetch("/api/users", {
@@ -23,6 +25,26 @@ const list = async (signal) => {
         });
         // if it resolve successfully will give the component an array of user objects that was retrieved from the db.
         return await response.json();
+    } catch (err) {
+        console.log(err);
+    }
+};
+
+// READING A USER PROFILE:
+const read = async (params, credentials, signal) => {
+    try {
+        let response = await fetch("/api/users/" + params.userId, {
+            method: "GET",
+            signal: signal,
+            headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json",
+                Authorization: "Bearer " + credentials.t,
+                // The JWT is attached to the GET fetch call in the Authorization header using the Bearer scheme.
+            },
+        });
+        return await response.json();
+        // When resolves will either give the component the user details or notify that access is restricted to authenticated user.
     } catch (err) {
         console.log(err);
     }
